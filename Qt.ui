@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>419</width>
+    <height>117</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>401</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Mobs">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="1">
+        <widget class="QComboBox" name="Box_Mobs">
+         <item>
+          <property name="text">
+           <string>Крэтс [1]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Шальной Пёс [1]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Бешеный пес [2]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Зигред [2]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Дряхлый скелет [2]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Крэтс-лидер [2]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Огненный паук [2]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Неистовый пес [3]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Пес-демон [3]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Зигред-воин [3]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Скелет-воин [3] </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Крэтс-вожак [3]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Огненная паучиха [3]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Пепельный паук [3]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Фицилия [3]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Матерый пес-демон [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Пурпурный зигред [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Гигантский зигред [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Зомби [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Древень молодой [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Древень [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Опытный беронский тигр [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Молодой беронский тигр [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Хакурт бурый [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Хакурт ледянник [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ловкая фицилия [4]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Кроган [4] </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Дугрхарг [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Медведь Пхадд [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Игуарон [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Гунгл одиночка [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Кровавый зигред [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Лесной Игуарон [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Пещерная мышь Атши [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Упырь [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Мертвец [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Скелет пса-демона [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Скелет орка-завоевателя [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Изгой Каменного лотоса [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Изгой Красных топоров [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Королева Андорвэн [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Королева Андорвэн [5]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Опытный Дугрхарг [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Старый Медведь Пхадд [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Гунгл изгнанник [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Глиняный голем [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Кодраг [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Летучая мышь Атши [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Гордт [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ГунглДО [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ренегат Каменного лотоса [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ренегат Красных топоров [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Шаркид-наемник [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Геланф [6]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Волк Валдагор [7]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Саблезубый тигр [7]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Молодой волк Валдагор [7]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Хромой саблезубый тигр [7]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ГунглВО [7]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Гордт-разбойник [7]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Каменный голем [7]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Шаркид-кондотьер [7] </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Глубинный геланф [7]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Гребенчатый геланф [7]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Гордт-головорез [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Гранитный голем [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ГунглХО [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Горгулья [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Флаундин-мятежник [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Йети-лазутчик Ханту [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Йети-лазутчик Юкари [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Йети-добытчик Ханту [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Йети-добытчик Юкари [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Белый медведь [8]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Большой скорпион [9]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ГунглХО надзиратель [9]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Древень-грибник [9]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Свирепая Горгулья [9] </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Детеныш Флангария Корра [9]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Йети-вредитель Ханту [9] </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Йети-вредитель Юкари [9]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Йети-охотник Ханту [9]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Йети-охотник Юкари [9] </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Дикий ледяной медведь [9]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Королевский скорпион [10]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Огненный Крофдор [10]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Эльдив-воин [10]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Иномирный Элементаль Воздуха [10]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Иномирный Элементаль Огня [10]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Иномирный Элементаль Земли [10]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Иномирный Элементаль Воды [10]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Иномирный Элементаль Тьмы [10]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Иномирный Элементаль Света [10]</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Выберите моба:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="Button_Start_Mobs">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Старт</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Button_Guide_Mobs">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>231</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Помощь</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Res">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Выберите ресурс:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="Box_Res">
+         <item>
+          <property name="text">
+           <string>Клевер</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Омела</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Чертополох</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Ирис</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Розмарин</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Тысячелистник</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Анемон</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Лотос</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Мандрагора</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Невзрачник</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Белладонна</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Непригляд</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Жар-цвет</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Вкусноцвет</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Гиамбир</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Лигрил</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Кувшинник</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Повей-трава</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Хельта</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Ветрица</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Росица</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Хоста</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Спелый гиамбир</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Ведовница</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Соломенник</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Леферт</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Нарцисс</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Аракша дурманная</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Ирвис розоволистный</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Полевой яркоцвет</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Гвоздика травянка</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Лесная фиалка</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Руибелла</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Эльтский гиамбир</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Исхандрия пламенеющая</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Техра многоцветная</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Цепторис сорный</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Ахайа-губительница</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Синевита ложная</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Травник] Чайный желтолиц</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Агат</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Аквамарин</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Бирюза</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Аметист</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Обсидиан</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Сапфир</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Изумруд</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Рубин</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Топаз</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Волшебная селитра</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Алмаз</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Чудотворная соль</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Янтарь</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Огненный сердолик</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Эльдорилл</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Веридий</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Драконова кровь</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Фиолин</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Эсмерат</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Кахолонг</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Флюорит</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Целестин</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Эльдориллова соль</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Верделит</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Ледянник</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Магнетит</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Темный железняк</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Армедьянк</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Корганит</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Смараглис</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Древесный камень</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Моховой камень</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Содалит</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Эльдорилловый кварц</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Горный лагр</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Кариатид</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Рутиан</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Диралин</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Сталактис</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Геолог] Сумерит</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Каменный карп</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Фелинойская вобла</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Пещерная рыба</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Лунный сазан</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Черный карась</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Серебристый линь</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Огненный лещ</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Сумрачный амур</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Угольная щука</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Алмазная кета</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Серебряный краб</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Багряная стерлядь</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Королевский краб</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Златоперая семга</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Лазурный лосось</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Золотой хабус</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Сумрачная Нидла</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Като</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Рыба-светлячок</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Хрустальный осетр</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Крылатка</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Риффа</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Панцирный динихтис</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Нерестовый хабус</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Златовлас</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Крапчатый шаробрюх</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Пузырник</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Удильщик</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Гульфия</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Златеница марийская</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Кольчатый жабрень</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Мозаичная рыба</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Пандофа</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Трехполосная фиусса</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Синежабрый хабус</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Плотоядная Шу</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Рыба-шутиха</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Скрубус</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Дискус</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Тепловодный нарлин</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[Рыбак] Чиаппа брюхоногая</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="Button_Guide_Res">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>231</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Помощь</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Button_Start_Res">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Старт</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
