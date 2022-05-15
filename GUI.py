@@ -13,7 +13,6 @@ from transliterate import translit
 import defs as d
 from threading import Thread
 
-import grabcolor
 import mobs
 import resourses
 
