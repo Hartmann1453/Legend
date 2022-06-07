@@ -6,6 +6,7 @@ import pyautogui
 import defs
 import fight
 import finder
+import puzzle
 
 
 def start(resourse):
@@ -16,6 +17,11 @@ def start(resourse):
             fight.start()
             continue
 
+        # Проверяем пазл
+        if puzzle.check_puzzle():
+            puzzle.start_puzzle()
+            continue
+
         # Проверяем заполненность инвентаря
         if check_inv():
             click_close()
@@ -23,6 +29,18 @@ def start(resourse):
 
         # Отлавлиаем ошибку "Добыча не удалась"
         if check_mine_fail():
+            click_close()
+            continue
+        # Отлавлиаем ошибку "Ошибка профессии"
+        if check_prof_error():
+            click_close()
+            continue
+        # Отлавлиаем ошибку "Цель не восстановилась"
+        if check_target_error():
+            click_close()
+            continue
+        # Отлавлиаем ошибку "Нет инструмента"
+        if check_instrument_error():
             click_close()
             continue
 
@@ -42,17 +60,20 @@ def start(resourse):
                 continue
 
             # Повторно ищем ресурс и начинаем добычу.
-            if click_harvest(resourse) == 'Ресурс не найден':
+            if click_harvest() == 'Иконка не найдена':
                 continue
 
-            # Идет ли добыча?
-                # Начали первым?
-                    # ждем
 
 def click_close():
-    # Ищем кнопку победы
+    # Ищем кнопку закрыть
     res_x, res_y = finder.element('img/default/close.png', 30)
     print(f'Элемент найден [Кнопка Выход]. x: {res_x} | y: {res_y}')
+    if res_x == 'Элемент не найден.':
+        res_x, res_y = finder.element('img/default/close2.png', 30)
+        if res_x == 'Элемент не найден.':
+            res_x, res_y = finder.element('img/default/close3.png', 30)
+            if res_x == 'Элемент не найден.':
+                return
 
     # Выделяем область клика
     x = random.randint(res_x, res_x + 100)
@@ -69,10 +90,31 @@ def check_inv():
         return False
     else:
         return True
-
 def check_mine_fail():
     res_x, res_y = finder.element('img/default/mine_fail.png', 3)
     print(f'Элемент найден [Добыча не удалась]. x: {res_x} | y: {res_y}')
+    if res_x == 'Элемент не найден.':
+        return False
+    else:
+        return True
+
+def check_prof_error():
+    res_x, res_y = finder.element('img/default/prof_error.png', 3)
+    print(f'Элемент найден [Ошибка профессии]. x: {res_x} | y: {res_y}')
+    if res_x == 'Элемент не найден.':
+        return False
+    else:
+        return True
+def check_target_error():
+    res_x, res_y = finder.element('img/default/target_error.png', 3)
+    print(f'Элемент найден [Цель не восстановилась]. x: {res_x} | y: {res_y}')
+    if res_x == 'Элемент не найден.':
+        return False
+    else:
+        return True
+def check_instrument_error():
+    res_x, res_y = finder.element('img/default/instrument_error.png', 3)
+    print(f'Элемент найден [Нет инструмента]. x: {res_x} | y: {res_y}')
     if res_x == 'Элемент не найден.':
         return False
     else:
@@ -92,31 +134,47 @@ def click_res(resourse):
     pyautogui.click(x, y) # Клик на моба
     time.sleep(1)
     print(f'Нажали на элемент [Ресурс {resourse}]')
-
 def check_res(resourse):
     # Ищем иконку моба
     res_x, res_y = finder.element(f'img/resourse/{resourse}/ico_res.png', 3)
     print(f'Элемент найден [Иконка {resourse}]. x: {res_x} | y: {res_y}')
     if res_x == 'Элемент не найден.':
         return 'Ресурс не подтвержден'
+def click_harvest():
+    # Ищем иконку добычи
+    res_x, res_y = finder.element(f'img/default/ico_mine.png', 3)
+    print(f'Элемент найден [Иконка]. x: {res_x} | y: {res_y}')
+    if res_x == 'Элемент не найден.':
+        res_x, res_y = finder.element(f'img/default/ico_harvest.png', 3)
+        if res_x == 'Элемент не найден.':
+            return 'Иконка не найдена'
 
-def click_harvest(resourse):
-    # Ищем моба
-    crd = finder.pixel_coord(resourse, 3)
-    if crd[0] == -1:
-        return 'Ресурс не найден'
-
-    print(f'Элемент найден [Ресурс {resourse}]. x: {crd[1]} | y: {crd[0]}')
     # Выделяем область клика
-    x = random.randint(crd[1], crd[1] + 4)
-    y = random.randint(crd[0], crd[0] + 4)
+    x = random.randint(res_x, res_x + 10)
+    y = random.randint(res_y, res_y + 10)
 
     # Кликаем
-    pyautogui.click(x, y)
-    time.sleep(0.3)
-    pyautogui.click(x, y)
+    pyautogui.click(x, y) # Клик на моба
+    time.sleep(1)
+    print(f'Нажали на элемент [Иконка добычи]')
 
-    print(f'Нажали на элемент [Ресурс {resourse}]')
-
-    # Пауза для добычи
-    time.sleep(25)
+#def click_harvest(resourse):
+    # Ищем моба
+    #crd = finder.pixel_coord(resourse, 3)
+    #if crd[0] == -1:
+    #    return 'Ресурс не найден'
+#
+    #print(f'Элемент найден [Ресурс {resourse}]. x: {crd[1]} | y: {crd[0]}')
+    ## Выделяем область клика
+    #x = random.randint(crd[1], crd[1] + 4)
+    #y = random.randint(crd[0], crd[0] + 4)
+#
+    ## Кликаем
+    #pyautogui.click(x, y)
+    #time.sleep(0.3)
+    #pyautogui.click(x, y)
+#
+    #print(f'Нажали на элемент [Ресурс {resourse}]')
+#
+    ## Пауза для добычи
+    #time.sleep(25)
